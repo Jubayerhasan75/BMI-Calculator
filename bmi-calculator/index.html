@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background-icons">
+    <div class="background-icons">
+  <img src="https://cdn-icons-png.flaticon.com/512/1041/1041373.png" class="icon dumbbell" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2913/2913462.png" class="icon water" />
+  <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" class="icon heart" />
+  <img src="https://cdn-icons-png.flaticon.com/512/201/201614.png" class="icon apple" />
+  <img src="https://cdn-icons-png.flaticon.com/512/619/619034.png" class="icon shoe" />
+  <img src="https://cdn-icons-png.flaticon.com/512/685/685352.png" class="icon chart" />
+  <img src="https://cdn-icons-png.flaticon.com/512/901/901199.png" class="icon weight" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2738/2738893.png" class="icon gym" />
+  <img src="https://cdn-icons-png.flaticon.com/512/3209/3209383.png" class="icon scale" />
+  <img src="https://cdn-icons-png.flaticon.com/512/2891/2891251.png" class="icon jump" />
+</div>
+
+  </div>
+
+  <div class="container">
+    <h1>BMI Calculator</h1>
+    
+    <div class="input-group">
+      <input type="number" id="height" placeholder="Height (cm)" />
+      <input type="number" id="weight" placeholder="Weight (kg)" />
+      <button id="calcBtn">Calculate BMI</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+
+    <div class="bmi-chart">
+      <h2>BMI Category</h2>
+      <ul>
+        <li><strong>&lt; 18.5</strong> – Underweight</li>
+        <li><strong>18.5 - 24.9</strong> – Normal</li>
+        <li><strong>25 - 29.9</strong> – Overweight</li>
+        <li><strong>30+</strong> – Obese</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

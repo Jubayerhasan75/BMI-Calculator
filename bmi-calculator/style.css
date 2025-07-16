@@ -1,0 +1,122 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #c0f7ff, #e0b3ff);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  color: #5a00a3;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+#calcBtn {
+  padding: 12px 25px;
+  background-color: #7a30cc;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+#calcBtn:hover {
+  background-color: #9f47ff;
+  transform: scale(1.05);
+}
+
+#calcBtn:active {
+  transform: scale(0.95);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.bmi-chart {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.bmi-chart h2 {
+  color: #444;
+}
+
+.bmi-chart ul {
+  padding-left: 20px;
+}
+
+.bmi-chart li {
+  margin-bottom: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.background-icons {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.icon {
+  width: 60px;
+  position: absolute;
+  opacity: 0.15;
+  animation: float 8s infinite ease-in-out;
+}
+
+/* Positions of each floating icon */
+.dumbbell { top: 5%; left: 5%; }
+.water    { top: 10%; right: 10%; }
+.heart    { top: 50%; left: 8%; }
+.apple    { top: 70%; right: 5%; }
+.shoe     { bottom: 5%; left: 50%; }
+.chart    { top: 35%; right: 20%; }
+.weight   { bottom: 15%; right: 15%; }
+.gym      { top: 60%; left: 70%; }
+.scale    { bottom: 10%; left: 10%; }
+.jump     { top: 20%; right: 35%; }
+
+@keyframes float {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
